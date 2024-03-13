@@ -27,7 +27,7 @@ public class sim13 extends Simulation {
 
 
     ChainBuilder script_1=
-            exec(http("request_0")// Ajouter l'id de la city code à la place de Request_0
+            exec(http("request_0")
             .post("/weather-forecast/forecast/by-city-id")
             .body(RawFileBody("computerdatabase.sim13/0000_request.json")),
             pause(15),
